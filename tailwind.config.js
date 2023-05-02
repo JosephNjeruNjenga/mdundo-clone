@@ -9,6 +9,9 @@ module.exports = {
     screens: {
       'lg': '807px',
     },
+    fontFamily: {
+      'body': ["Open Sans"],
+    },
   },
   plugins: [],
 }
