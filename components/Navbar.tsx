@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* LOGO */}
         <div className="cursor-pointer self-center col-span-1 lg:flex-none place-self-center">
           <img
-            className={`h-10 lg:h-14 ${showBackground ? "lg:h-10" : ""}`}
+            className={`h-9 small:h-11 lg:h-14 ${showBackground ? "lg:h-10" : ""}`}
             src="./images/logo.png"
             alt="Logo"
           />

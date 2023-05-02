@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      small: "481px",
       lg: "807px",
     },
     fontFamily: {

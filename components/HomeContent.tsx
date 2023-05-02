@@ -1,41 +1,22 @@
 import React from 'react'
+import Song from './Song';
 
 const HomeContent = () => {
   return (
-    <section className="intro flex justify-center lg:pt-20">
-      <div className="lg:max-w-[1000px]">
-        <article className="py-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
-          adipisci voluptates enim ratione ipsam repudiandae repellat nobis vero
-          distinctio! Pariatur deleniti rerum ea laudantium ut nostrum quod
-          magni, amet rem!
-        </article>
-        <article className="py-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
-          adipisci voluptates enim ratione ipsam repudiandae repellat nobis vero
-          distinctio! Pariatur deleniti rerum ea laudantium ut nostrum quod
-          magni, amet rem!
-        </article>
-        <article className="py-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
-          adipisci voluptates enim ratione ipsam repudiandae repellat nobis vero
-          distinctio! Pariatur deleniti rerum ea laudantium ut nostrum quod
-          magni, amet rem!
-        </article>
-        <article className="py-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
-          adipisci voluptates enim ratione ipsam repudiandae repellat nobis vero
-          distinctio! Pariatur deleniti rerum ea laudantium ut nostrum quod
-          magni, amet rem!
-        </article>
-        <article className="py-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
-          adipisci voluptates enim ratione ipsam repudiandae repellat nobis vero
-          distinctio! Pariatur deleniti rerum ea laudantium ut nostrum quod
-          magni, amet rem!
-        </article>
+    <div className="intro lg:flex lg:justify-center lg:pt-20">
+      <div className="lg:max-w-[1000px] px-2">
+        <Song />
+        <Song />
+        <Song />
+        <Song />
+        <Song />
+        <Song />
+        <Song />
+        <Song />
+        <Song />
+        <Song />
       </div>
-    </section>
+    </div>
   );
 }
 
