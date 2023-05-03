@@ -8,14 +8,18 @@ module.exports = {
   theme: {
     screens: {
       small: "481px",
+      medium: '501px',
       lg: "807px",
+      x: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
     },
     fontFamily: {
       body: ["Open Sans"],
     },
     extend: {
       colors: {
-        background: "#444444",
+        'background': "#444444",
       },
     },
   },

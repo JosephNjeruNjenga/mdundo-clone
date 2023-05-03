@@ -24,15 +24,15 @@ const Navbar = () => {
   console.log(showBackground);
   return (
     <div
-      className={`w-full shadow-lg lg:shadow-none font-body pt-1 lg:py-2 transition duration-700 ease-in-out lg:flex lg:justify-center lg:bg-transparent sticky lg:fixed top-0 bg-background ${
-        showBackground ? "lg:bg-background lg:py-0 lg:shadow-xl" : ""
+      className={`w-full z-10 shadow-lg lg:shadow-none font-body pt-1 lg:py-2 transition duration-700 ease-in-out lg:flex lg:justify-center lg:bg-transparent sticky lg:fixed top-0 bg-background ${
+        showBackground ? "lg:bg-[#444444] lg:py-0 lg:shadow-xl" : ""
       }`}
     >
       <div className="px-0 lg:px-4 grid grid-cols-7 lg:flex items-center">
         {/* LOGO */}
         <div className="cursor-pointer self-center col-span-1 lg:flex-none place-self-center">
           <img
-            className={`h-9 small:h-11 lg:h-14 ${showBackground ? "lg:h-10" : ""}`}
+            className={`h-9 small:h-11 lg:h-12 ${showBackground ? "lg:h-10" : ""}`}
             src="./images/logo.png"
             alt="Logo"
           />
