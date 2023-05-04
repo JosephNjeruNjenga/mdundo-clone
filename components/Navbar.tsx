@@ -24,15 +24,19 @@ const Navbar = () => {
   console.log(showBackground);
   return (
     <div
-      className={`w-full z-10 shadow-lg lg:shadow-none font-body pt-1 lg:py-2 transition duration-700 ease-in-out lg:flex lg:justify-center lg:bg-transparent sticky lg:fixed top-0 bg-background ${
-        showBackground ? "lg:bg-[#444444] lg:py-0 lg:shadow-xl" : ""
+      className={`w-full z-10 shadow-lg lg:pb-2 lg:shadow-none font-body pt-1 transition duration-700 ease-in-out lg:flex lg:justify-center sticky lg:fixed top-0 bg-background ${
+        showBackground
+          ? "lg:bg-background lg:py-0 lg:shadow-xl"
+          : " lg:bg-transparent lg:py-2"
       }`}
     >
       <div className="px-0 lg:px-4 grid grid-cols-7 lg:flex items-center">
         {/* LOGO */}
         <div className="cursor-pointer self-center col-span-1 lg:flex-none place-self-center">
           <img
-            className={`h-9 small:h-11 lg:h-12 ${showBackground ? "lg:h-10" : ""}`}
+            className={`h-9 small:h-11 ${
+              showBackground ? "lg:h-12" : "lg:h-14"
+            }`}
             src="./images/logo.png"
             alt="Logo"
           />
@@ -52,8 +56,8 @@ const Navbar = () => {
             <BsPersonCircle className="cursor-pointer" size={30} />
           </div>
           <div
-            className={`uppercase cursor-pointer hidden lg:block text-gray-800 lg:hover:text-gray-500 text-sm font-normal ${
-              showBackground ? "lg:text-white" : ""
+            className={`uppercase cursor-pointer hidden lg:block lg:hover:text-gray-500 text-sm font-normal ${
+              showBackground ? "lg:text-white" : "text-gray-800"
             }`}
           >
             login
@@ -62,8 +66,8 @@ const Navbar = () => {
         {/* NAV */}
         <nav className="col-span-7">
           <ul
-            className={`flex justify-evenly text-white lg:text-gray-800  text-sm font-normal ${
-              showBackground ? "lg:text-white" : ""
+            className={`flex justify-evenly text-white  text-sm font-normal ${
+              showBackground ? "lg:text-white" : "text-gray-800"
             }`}
           >
             <li className="py-4 hover:text-gray-300 lg:hover:text-gray-500 uppercase">
