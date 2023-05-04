@@ -2,7 +2,7 @@ import Song from "./Song";
 
 const SongList = () => {
   return (
-    <div className="lg:max-w-[1000px] px-2 small:px-4">
+    <div className="lg:max-w-[1000px]">
       <Song
         title="diamond platnumz baikoko mix"
         artist="bongo mix 2023 - DJ BEE✔️"
