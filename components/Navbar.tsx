@@ -24,15 +24,15 @@ const Navbar = () => {
   console.log(showBackground);
   return (
     <div
-      className={`w-full z-10 shadow-lg lg:pb-2 lg:shadow-none font-body pt-1 transition duration-700 ease-in-out lg:flex lg:justify-center sticky lg:fixed top-0 bg-background ${
+      className={`w-full z-10 shadow-lg font-body pt-1 transition duration-700 ease-in-out lg:flex lg:justify-center sticky lg:fixed top-0 bg-background ${
         showBackground
-          ? "lg:bg-background lg:py-0 lg:shadow-xl"
-          : " lg:bg-transparent lg:py-2"
+          ? "lg:bg-background lg:py-1 lg:shadow-xl"
+          : " lg:bg-transparent lg:py-2 lg:shadow-none"
       }`}
     >
       <div className="px-0 lg:px-4 grid grid-cols-7 lg:flex items-center">
         {/* LOGO */}
-        <div className="cursor-pointer self-center col-span-1 lg:flex-none place-self-center">
+        <div className="cursor-pointer self-center col-span-1 place-self-center">
           <img
             className={`h-9 small:h-11 ${
               showBackground ? "lg:h-12" : "lg:h-14"
@@ -56,8 +56,10 @@ const Navbar = () => {
             <BsPersonCircle className="cursor-pointer" size={30} />
           </div>
           <div
-            className={`uppercase cursor-pointer hidden lg:block lg:hover:text-gray-500 text-sm font-normal ${
-              showBackground ? "lg:text-white" : "text-gray-800"
+            className={`uppercase cursor-pointer hidden text-gray-800 lg:block text-sm font-normal ${
+              showBackground
+                ? "lg:text-white lg:hover:text-gray-300"
+                : "lg:hover:text-gray-500"
             }`}
           >
             login
@@ -66,17 +68,35 @@ const Navbar = () => {
         {/* NAV */}
         <nav className="col-span-7">
           <ul
-            className={`flex justify-evenly text-white  text-sm font-normal ${
-              showBackground ? "lg:text-white" : "text-gray-800"
+            className={`flex justify-evenly text-white text-sm  font-normal ${
+              showBackground ? "lg:text-white" : "lg:text-gray-800"
             }`}
           >
-            <li className="py-4 hover:text-gray-300 lg:hover:text-gray-500 uppercase">
+            <li
+              className={`py-4 hover:text-gray-300 uppercase ${
+                showBackground
+                  ? "lg:hover:text-gray-300 "
+                  : "lg:hover:text-gray-500"
+              }`}
+            >
               <a href="#">charts</a>
             </li>
-            <li className="py-4 hover:text-gray-300 lg:ml-4 lg:hover:text-gray-500 uppercase">
+            <li
+              className={`py-4 hover:text-gray-300 lg:ml-4 uppercase ${
+                showBackground
+                  ? "lg:hover:text-gray-300 "
+                  : "lg:hover:text-gray-500"
+              }`}
+            >
               <a href="#">artists</a>
             </li>
-            <li className="py-4 hover:text-gray-300 lg:ml-4 lg:hover:text-gray-500 uppercase">
+            <li
+              className={`py-4 hover:text-gray-300 lg:ml-4 uppercase ${
+                showBackground
+                  ? "lg:hover:text-gray-300 "
+                  : "lg:hover:text-gray-500"
+              }`}
+            >
               <a href="#">mixes</a>
             </li>
           </ul>

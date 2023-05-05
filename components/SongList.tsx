@@ -1,8 +1,22 @@
+import MoreBtn from "./MoreBtn";
 import Song from "./Song";
 
-const SongList = () => {
+interface SongListProps {
+  display: boolean;
+  // data: Array<object>;
+}
+
+const SongList: React.FC<SongListProps> = ({display}) => {
   return (
     <div className="lg:max-w-[1000px]">
+      <h2
+        className={`uppercase text-gray-700 pl-1 text-2xl small:text-2xl medium:text-3xl pb-4 lg:pb-8 ${
+          display ? "" : "hidden"
+        }`}
+      >
+        top songs
+      </h2>
+
       <Song
         title="diamond platnumz baikoko mix"
         artist="bongo mix 2023 - DJ BEE✔️"
@@ -63,6 +77,7 @@ const SongList = () => {
         time="13:09"
         genre="DJ Mixes"
       />
+      <MoreBtn display={display} />
     </div>
   );
 };
