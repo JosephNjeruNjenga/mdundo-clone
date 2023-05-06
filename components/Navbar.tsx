@@ -21,7 +21,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  console.log(showBackground);
   return (
     <div
       className={`w-full z-10 shadow-lg font-body pt-1 transition duration-700 ease-in-out lg:flex lg:justify-center sticky lg:fixed top-0 bg-background ${
@@ -30,9 +29,9 @@ const Navbar = () => {
           : " lg:bg-transparent lg:py-2 lg:shadow-none"
       }`}
     >
-      <div className="px-0 lg:px-4 grid grid-cols-7 lg:flex items-center">
+      <div className="w-full lg:max-w-[1000px] px-0 lg:px-4 grid grid-cols-7 lg:flex items-center">
         {/* LOGO */}
-        <div className="cursor-pointer self-center col-span-1 place-self-center">
+        <div className="cursor-pointer lg:pr-14 lg:pl-1 self-center col-span-1 place-self-center">
           <img
             className={`h-9 small:h-11 ${
               showBackground ? "lg:h-12" : "lg:h-14"
@@ -42,7 +41,7 @@ const Navbar = () => {
           />
         </div>
         {/* SEARCH */}
-        <div className="flex lg:mx-8 lg:w-96 col-span-5 h-8 px-4 rounded items-center gap-3 justify-between bg-white">
+        <div className="flex flex-1 lg:mx-10 lg:w-96 col-span-5 h-8 px-4 rounded items-center gap-3 justify-between bg-white">
           <input
             className="outline-none font-body text-xs lg:text-sm w-full"
             type="text"

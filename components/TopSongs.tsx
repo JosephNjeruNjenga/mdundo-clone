@@ -1,11 +1,12 @@
-import SongList from "./SongList"
+import SongList from "./SongList";
+import { topSongs } from "./data";
 
 const TopSongs = () => {
   return (
-    <div className="bg-[#f9f8f8] pt-10 px-3 font-body lg:flex flex-col small:px-4 lg:items-center pb-10 lg:pt-8">
-      <SongList display />
+    <div className="bg-body px-3 font-body pb-10 pt-10 lg:pt-8 small:px-4 lg:flex lg:items-center flex-col">
+      <SongList display data={topSongs} />
     </div>
   );
-}
+};
 
-export default TopSongs
+export default TopSongs;
