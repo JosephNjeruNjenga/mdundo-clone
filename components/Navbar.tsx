@@ -23,7 +23,7 @@ const Navbar = () => {
   }, []);
   return (
     <div
-      className={`w-full z-10 shadow-lg font-body pt-1 transition duration-700 ease-in-out lg:flex lg:justify-center sticky lg:fixed top-0 bg-background ${
+      className={`w-full z-50 shadow-lg font-body pt-1 transition duration-700 ease-in-out lg:flex lg:justify-center sticky lg:fixed top-0 bg-background ${
         showBackground
           ? "lg:bg-background lg:py-1 lg:shadow-xl"
           : " lg:bg-transparent lg:py-2 lg:shadow-none"

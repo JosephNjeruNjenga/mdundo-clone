@@ -1,13 +1,18 @@
 interface SongProps {
-    title: string;
-    artist: string;
-    time: string;
-    genre: string;
+  title: string;
+  artist: string;
+  time: string;
+  genre: string;
 }
 
 interface CardProps {
   title: string;
   subtitle: string;
+  image: string;
+}
+
+interface ArtistsProps {
+  name: string;
   image: string;
 }
 
@@ -155,16 +160,84 @@ export const playlists: Array<CardProps> = [
     subtitle: "87",
     image: "https://mdundo.com/media/playlist/44490_fQM0mqL4_t.jpg",
   },
-  ,
   {
     title: "MAD Exclusive",
     subtitle: "129",
     image: "https://mdundo.com/media/playlist/11742_myzVlgLS_t.jpg",
   },
-  ,
   {
     title: "Boutross Exclusive",
     subtitle: "39",
     image: "https://mdundo.com/media/playlist/5927_p8VidUyG_t.jpg",
+  },
+];
+
+export const topArtists: Array<ArtistsProps> = [
+  {
+    name: "Lucky Dube",
+    image:
+      "https://mdundo.com/media/picture/171070_FHRO8gXTohyeXdpIDCOm8jjPr9PW_s.jpg",
+  },
+  {
+    name: "Ayra Starr",
+    image:
+      "https://mdundo.com/media/picture/235084_wdh2wxQtcWIVUkrgm2y1lEYGoM4K_s.jpg",
+  },
+  {
+    name: "Kizz Daniel",
+    image:
+      "https://mdundo.com/media/picture/146141_76LZyIWWhJhBR6aVoKirD6kLE0oL_s.jpg",
+  },
+  {
+    name: "Bongo Mix",
+    image:
+      "https://mdundo.com/media/picture/145727_fTrUjImmRRUt2FbjvwcEUP6Yx4za_s.jpg",
+  },
+  {
+    name: "Omah Lay",
+    image:
+      "https://mdundo.com/media/picture/188909_q9rjnvar7WNQLHUqO1TVnkZNy4Am_s.jpg",
+  },
+  {
+    name: "Baraka Oscar",
+    image:
+      "https://mdundo.com/media/picture/109063_7Ccf9wFP6zhcBEgKBMW1S0R0J6ja_s.jpg",
+  },
+  {
+    name: "Rema",
+    image:
+      "https://mdundo.com/media/picture/151004_070Fyp86aKRFfSlLtUK4ZvJvkvYX_s.jpg",
+  },
+  {
+    name: "Dj Lyta Mixes✔️",
+    image:
+      "https://mdundo.com/media/picture/6790_505wAN04kwFphgWR2qOaMrkp1KEk_s.jpg",
+  },
+  {
+    name: "Victony",
+    image:
+      "https://mdundo.com/media/picture/264280_rt9BlDZpmkFvexB5uEVsF6cdaLKj_s.jpg",
+  },
+];
+export const newArtists: Array<ArtistsProps> = [
+  {
+    name: "Vodacom Uni",
+    image:
+      "https://mdundo.com/media/picture/279753_lcBO2qgwPeDYPnBF2hW9IgLAOa5U_s.jpg",
+  },
+  {
+    name: "Boy sean",
+    image:
+      "https://mdundo.com/media/picture/19840_hzV1ku0klpuaDhbBlDcx9jxnUW5z_s.jpg",
+  },
+  {
+    name: "Danny Nanone",
+    image:
+      "https://mdundo.com/media/picture/301148_C9BpuzFFEWKpymSFpxEMFSbVQaGJ_s.jpg",
+  },
+  {
+    name: "Karole Kasita",
+    image:
+      "https://mdundo.com/media/picture/251419_37JXU3A2ENW0CHAII0AkL5r9oFg6_s.jpg",
   },
 ];

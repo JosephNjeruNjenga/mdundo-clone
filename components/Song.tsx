@@ -26,7 +26,7 @@ const Song: React.FC<SongProps> = ({title, artist, time, genre}) => {
         </span>
         <span className="text-xs text-gray-600/70">{artist}</span>
       </div>
-      <span className="hidden w-full lg:block hover:underline max-w-[90px] text-s text-gray-600/80">
+      <span className="hidden w-full cursor-pointer lg:block hover:underline max-w-[90px] text-s text-gray-600/80">
         #{genre}
       </span>
       <span className="pl-3 small:px-3 text-[#47413c]/80 small:text-base text-sm">
