@@ -5,6 +5,12 @@ interface SongProps {
     genre: string;
 }
 
+interface CardProps {
+  title: string;
+  subtitle: string;
+  image: string;
+}
+
 export const djMixes: Array<SongProps> = [
   {
     title: "diamond platnumz baikoko mix",
@@ -130,5 +136,35 @@ export const topSongs: Array<SongProps> = [
     artist: "Boy Sean",
     time: "02:44",
     genre: "Naija",
+  },
+];
+
+export const playlists: Array<CardProps> = [
+  {
+    title: "Hot Party Mixes",
+    subtitle: "118",
+    image: "https://mdundo.com/media/playlist/39446_LzbTNJMX_t.jpg",
+  },
+  {
+    title: "Fik Fameika | Exclusive",
+    subtitle: "38",
+    image: "https://mdundo.com/media/playlist/14571_InUk25QK_t.jpg",
+  },
+  {
+    title: "E choke DJ Mix",
+    subtitle: "87",
+    image: "https://mdundo.com/media/playlist/44490_fQM0mqL4_t.jpg",
+  },
+  ,
+  {
+    title: "MAD Exclusive",
+    subtitle: "129",
+    image: "https://mdundo.com/media/playlist/11742_myzVlgLS_t.jpg",
+  },
+  ,
+  {
+    title: "Boutross Exclusive",
+    subtitle: "39",
+    image: "https://mdundo.com/media/playlist/5927_p8VidUyG_t.jpg",
   },
 ];

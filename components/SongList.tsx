@@ -2,7 +2,7 @@ import MoreBtn from "./MoreBtn";
 import Song from "./Song";
 
 interface SongListProps {
-  display: boolean;
+  display: string;
   data: Record<string, any>[];
 }
 
@@ -16,15 +16,15 @@ const SongList: React.FC<SongListProps> = ({ display, data }) => {
       >
         top songs
       </h2>
-        {data.map((song, index: number) => (
-          <Song
-            key={index}
-            title={song.title}
-            artist={song.artist}
-            time={song.time}
-            genre={song.genre}
-          />
-        ))}
+      {data.map((song, index: number) => (
+        <Song
+          key={index}
+          title={song.title}
+          artist={song.artist}
+          time={song.time}
+          genre={song.genre}
+        />
+      ))}
       <MoreBtn display={display} />
     </div>
   );

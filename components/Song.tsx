@@ -14,7 +14,7 @@ const Song: React.FC<SongProps> = ({title, artist, time, genre}) => {
       <div className="text-blue-500/90 hover:bg-white hover:shadow-lg rounded-[3px] cursor-pointer">
         <MdFileDownload size={40} />
       </div>
-      <div className={`px-1 ${genre === 'DJ Mixes' ? 'hidden' : ''}`}>
+      <div className={`px-1 cursor-pointer ${genre === 'DJ Mixes' ? 'hidden' : ''}`}>
         <BsFillPlayCircleFill
           className="text-orange-500"
           size={35}
@@ -32,9 +32,9 @@ const Song: React.FC<SongProps> = ({title, artist, time, genre}) => {
       <span className="pl-3 small:px-3 text-[#47413c]/80 small:text-base text-sm">
         {time}
       </span>
-      <div className="hidden small:block hover:bg-white hover:shadow-lg rounded-[3px] transition duration-200 cursor-pointer ease-in-out text-orange-500">
+      <a href='#' className="hidden small:block hover:bg-white hover:shadow-lg rounded-[3px] transition duration-200 cursor-pointer ease-in-out text-orange-500">
         <HiShare size={25} />
-      </div>
+      </a>
     </div>
   );
 };
