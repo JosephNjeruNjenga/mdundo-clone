@@ -1,4 +1,5 @@
 import Facebook from "@/components/Facebook";
+import Footer from "@/components/Footer";
 import Introduction from "@/components/Introduction";
 import LatestNews from "@/components/LatestNews";
 import Navbar from "@/components/Navbar";
@@ -24,6 +25,7 @@ export default function Home() {
       <hr className="border-gray-300" />
       <Outro />
       <hr className="border-gray-300" />
+      <Footer />
     </div>
   );
 }
