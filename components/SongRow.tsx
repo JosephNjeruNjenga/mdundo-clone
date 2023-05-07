@@ -10,10 +10,10 @@ interface SongRowProps {
 const SongRow: React.FC<SongRowProps> = ({ display, data, heading }) => {
   return (
     <div className="lg:w-full lg:max-w-[1000px]">
-      <h2 className="text-4xl uppercase tracking-[0.4px] lg:text-[40px] pl-1 lg:pl-[20px] mb-9 text-gray-700">
+      <h2 className="text-4xl uppercase tracking-[0.4px] lg:text-[40px] pl-1 small:pl-2  lg:pl-[20px] mb-9 text-gray-700">
         {heading}
       </h2>
-      <div className="relative w-full flex lg:ml-0 z-10 flex-nowrap lg:flex-wrap lg:overflow-visible -ml-3 -mr-3 overflow-x-scroll">
+      <div className="relative w-full flex lg:ml-0 z-10 flex-nowrap lg:flex-wrap lg:overflow-visible overflow-x-scroll">
         {data.map((card, index: number) => (
           <Card
             key={index}

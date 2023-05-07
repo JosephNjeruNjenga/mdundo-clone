@@ -16,6 +16,12 @@ interface ArtistsProps {
   image: string;
 }
 
+interface NewsProps {
+  title: string,
+  date: string,
+  image: string,
+}
+
 export const djMixes: Array<SongProps> = [
   {
     title: "diamond platnumz baikoko mix",
@@ -219,6 +225,7 @@ export const topArtists: Array<ArtistsProps> = [
       "https://mdundo.com/media/picture/264280_rt9BlDZpmkFvexB5uEVsF6cdaLKj_s.jpg",
   },
 ];
+
 export const newArtists: Array<ArtistsProps> = [
   {
     name: "Vodacom Uni",
@@ -239,5 +246,49 @@ export const newArtists: Array<ArtistsProps> = [
     name: "Karole Kasita",
     image:
       "https://mdundo.com/media/picture/251419_37JXU3A2ENW0CHAII0AkL5r9oFg6_s.jpg",
+  },
+];
+
+export const news: Array<NewsProps> = [
+  {
+    title: "New Music Kenya: Willy Paul Ft. Miss P 'Popo'",
+    date: "05 May",
+    image: "https://mdundo.com/media/article-thumbs/t43982.jpg",
+  },
+  {
+    title: "NYIMBO ZA TANZANIA ZINAZOFANYA VIZURI KENYA WIKI HII.",
+    date: "05 May",
+    image: "https://mdundo.com/media/article-thumbs/t43981.jpg",
+  },
+  {
+    title: "Anjella Atangaza Ujio Wake Mpya",
+    date: "05 May",
+    image: "https://mdundo.com/media/article-thumbs/t43980.jpg",
+  },
+  {
+    title: "New Music Kenya: Savara 'Reggae Ya Kinyozi' Remix",
+    date: "02 May",
+    image: "https://mdundo.com/media/article-thumbs/t43959.jpg",
+  },
+  {
+    title: "Whozu Aachia  “VAVAYO” Video Akiwa na Marioo",
+    date: "02 May",
+    image: "https://mdundo.com/media/article-thumbs/t43958.jpg",
+  },
+  {
+    title: "Nyimbo Mpya Tanzania Wiki Hii",
+    date: "02 May",
+    image: "https://mdundo.com/media/article-thumbs/t43957.jpg",
+  },
+  {
+    title: "New Music Kenya: King Kaka Ft. Solomon Mkubwa 'Nakimbilia Kwako'",
+    date: "02 May",
+    image: "https://mdundo.com/media/article-thumbs/t43956.jpg",
+  },
+  {
+    title:
+      "Prince Indah's New Album 'Puonj Mag Dak' Records Huge Success Days After Release",
+    date: "02 May",
+    image: "https://mdundo.com/media/article-thumbs/t43955.jpg",
   },
 ];

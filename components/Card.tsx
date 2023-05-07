@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({display, title, subtitle, image, name}) => {
         <img
           className="group-hover:brightness-[.6] w-full h-full object-cover transition duration-200  ease-in-out"
           src={image}
-          alt=""
+          alt={`${display === "playlists" ? title : name }`}
         />
         <a
           href="#"
