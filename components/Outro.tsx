@@ -26,7 +26,7 @@ const Outro = () => {
             generated from the site fairly with the artists.
           </p>
         </div>
-        <div className="px-5 py-[15px] mx-auto medium:w-[355px] bg-[#3695d6] hover:bg-blue-600 transition duration-300 ease text-white text-sm text-center rounded-[3px]">
+        <div className="px-5 cursor-pointer py-[15px] mx-auto medium:w-[355px] bg-[#3695d6] hover:bg-blue-600 transition duration-300 ease text-white text-sm text-center rounded-[3px]">
           I am a musician! - Log in or Sign up
         </div>
       </div>

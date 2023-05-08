@@ -29,9 +29,9 @@ const Navbar = () => {
           : " lg:bg-transparent lg:py-2 lg:shadow-none"
       }`}
     >
-      <div className="w-full lg:max-w-[1000px] px-0 lg:px-4 grid grid-cols-7 lg:flex items-center">
+      <div className="w-full lg:max-w-[1000px] px-0 lg:px-5 grid grid-cols-7 lg:flex items-center">
         {/* LOGO */}
-        <div className="cursor-pointer lg:pr-14 lg:pl-1 self-center col-span-1 place-self-center">
+        <div className="cursor-pointer lg:mr-14 lg:pl-1 self-center col-span-1 place-self-center">
           <img
             className={`h-9 small:h-11 ${
               showBackground ? "lg:h-12" : "lg:h-14"
@@ -43,7 +43,7 @@ const Navbar = () => {
         {/* SEARCH */}
         <div className="flex flex-1 lg:mx-10 lg:w-96 col-span-5 h-8 px-4 rounded items-center gap-3 justify-between bg-white">
           <input
-            className="outline-none font-body text-xs lg:text-sm w-full"
+            className="outline-none font-body text-xs font-semibold lg:text-sm w-full"
             type="text"
             placeholder="Search for artists and songs"
           />
@@ -55,7 +55,7 @@ const Navbar = () => {
             <BsPersonCircle className="cursor-pointer" size={30} />
           </div>
           <div
-            className={`uppercase cursor-pointer hidden text-gray-800 lg:block text-sm font-normal ${
+            className={`uppercase cursor-pointer hidden text-[#47413c] lg:block text-sm font-semibold ${
               showBackground
                 ? "lg:text-white lg:hover:text-gray-300"
                 : "lg:hover:text-gray-500"
@@ -67,8 +67,8 @@ const Navbar = () => {
         {/* NAV */}
         <nav className="col-span-7">
           <ul
-            className={`flex justify-evenly text-white text-sm  font-normal ${
-              showBackground ? "lg:text-white" : "lg:text-gray-800"
+            className={`flex justify-evenly text-white text-sm  font-semibold ${
+              showBackground ? "lg:text-white" : "lg:text-[#47413c]"
             }`}
           >
             <li

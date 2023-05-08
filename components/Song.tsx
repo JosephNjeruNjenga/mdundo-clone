@@ -10,29 +10,41 @@ interface SongProps {
 }
 const Song: React.FC<SongProps> = ({title, artist, time, genre}) => {
   return (
-    <div className="flex pt-2 pb-1 justify-between border-b border-b-gray-400/50 items-center">
-      <div className="text-blue-500/90 hover:bg-white hover:shadow-lg rounded-[3px] cursor-pointer">
+    <div
+      className="flex pt-2 text-[#47413c] pb-1 justify-between border-b border-b-gray-400/50 items-center"
+    >
+      {/* DOWNLOAD BTN */}
+      <div className="text-blue-500 hover:bg-white hover:shadow-lg rounded-[3px] cursor-pointer">
         <MdFileDownload size={40} />
       </div>
-      <div className={`px-1 cursor-pointer ${genre === 'DJ Mixes' ? 'hidden' : ''}`}>
-        <BsFillPlayCircleFill
-          className="text-orange-500"
-          size={35}
-        />
+      {/* PLAY BTN */}
+      <div
+        className={`px-1 cursor-pointer ${
+          genre === "DJ Mixes" ? "hidden" : ""
+        }`}
+      >
+        <BsFillPlayCircleFill className="text-orange-500" size={35} />
       </div>
+      {/* TITLE & ARTIST */}
       <div className="w-full pl-2 group capitalize cursor-pointer flex flex-col">
-        <span className="text-sm small:tracking-wide group-hover:underline text-gray-600 font-semibold">
+        {/* TITLE */}
+        <span className="text-sm small:tracking-wide group-hover:underline font-semibold">
           {title}
         </span>
-        <span className="text-xs text-gray-600/70">{artist}</span>
+        {/* ARTIST */}
+        <span className="text-xs">{artist}</span>
       </div>
-      <span className="hidden w-full cursor-pointer lg:block hover:underline max-w-[90px] text-s text-gray-600/80">
+      {/* GENRE */}
+      <span className="hidden w-full cursor-pointer lg:block hover:underline max-w-[90px] text-sm font-semibold">
         #{genre}
       </span>
-      <span className="pl-3 small:px-3 text-[#47413c]/80 small:text-base text-sm">
-        {time}
-      </span>
-      <a href='#' className="hidden small:block hover:bg-white hover:shadow-lg rounded-[3px] transition duration-200 cursor-pointer ease-in-out text-orange-500">
+      {/* TIME */}
+      <span className="pl-3 small:px-3 small:text-base text-base">{time}</span>
+      {/* SHARE BTN */}
+      <a
+        href="#"
+        className="hidden small:block hover:bg-white hover:shadow-lg rounded-[3px] transition duration-200 cursor-pointer ease-in-out text-orange-500"
+      >
         <HiShare size={25} />
       </a>
     </div>

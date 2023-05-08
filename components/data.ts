@@ -228,6 +228,11 @@ export const topArtists: Array<ArtistsProps> = [
 
 export const newArtists: Array<ArtistsProps> = [
   {
+    name: "KRG THE DON",
+    image:
+      "https://mdundo.com/media/picture/301659_aWEhFH7sGppCdcub8iWEkbOockgW_s.jpg",
+  },
+  {
     name: "Vodacom Uni",
     image:
       "https://mdundo.com/media/picture/279753_lcBO2qgwPeDYPnBF2hW9IgLAOa5U_s.jpg",

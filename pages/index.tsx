@@ -1,4 +1,3 @@
-import Facebook from "@/components/Facebook";
 import Footer from "@/components/Footer";
 import Introduction from "@/components/Introduction";
 import LatestNews from "@/components/LatestNews";
@@ -13,7 +12,6 @@ export default function Home() {
   return (
     <div className="relative">
       <Navbar />
-      <Facebook />
       <Introduction />
       <hr className="border-gray-300" />
       <TopSongs />
