@@ -16,17 +16,15 @@ const Outro = () => {
           </p>
           <p className="mb-8">
             Mdundo is kicking music into the stratosphere by{" "}
-            <span className="font-bold">
-              taking the side of the artist.
-            </span>{" "}
+            <span className="font-bold">taking the side of the artist.</span>{" "}
             Other mobile music services keep{" "}
-            <span className="font-bold">85-90%</span> of sales. What?!, Yes,
-            the majority of the cash lands in the pockets of big telcos. Mdundo
+            <span className="font-bold">85-90%</span> of sales. What?!, Yes, the
+            majority of the cash lands in the pockets of big telcos. Mdundo
             enables you to keep track of your fans and we split any revenue
             generated from the site fairly with the artists.
           </p>
         </div>
-        <div className="px-5 cursor-pointer py-[15px] mx-auto medium:w-[355px] bg-[#3695d6] hover:bg-blue-600 transition duration-300 ease text-white text-sm text-center rounded-[3px]">
+        <div className="px-5 select-none cursor-pointer py-[15px] mx-auto medium:w-[355px] bg-[#3695d6] hover:bg-[#1187d8] transition duration-300 ease text-white text-sm text-center rounded-[3px]">
           I am a musician! - Log in or Sign up
         </div>
       </div>

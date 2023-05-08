@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <div className="w-full lg:max-w-[1000px] px-0 lg:px-5 grid grid-cols-7 lg:flex items-center">
         {/* LOGO */}
-        <div className="cursor-pointer lg:mr-14 lg:pl-1 self-center col-span-1 place-self-center">
+        <div className="cursor-pointer select-none lg:mr-14 lg:pl-1 self-center col-span-1 place-self-center">
           <img
             className={`h-9 small:h-11 ${
               showBackground ? "lg:h-12" : "lg:h-14"

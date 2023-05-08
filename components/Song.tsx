@@ -10,9 +10,7 @@ interface SongProps {
 }
 const Song: React.FC<SongProps> = ({title, artist, time, genre}) => {
   return (
-    <div
-      className="flex pt-2 text-[#47413c] pb-1 justify-between border-b border-b-gray-400/50 items-center"
-    >
+    <div className="flex pt-2 text-[#47413c] pb-1 justify-between border-b border-b-gray-400/50 items-center">
       {/* DOWNLOAD BTN */}
       <div className="text-blue-500 hover:bg-white hover:shadow-lg rounded-[3px] cursor-pointer">
         <MdFileDownload size={40} />
@@ -23,7 +21,7 @@ const Song: React.FC<SongProps> = ({title, artist, time, genre}) => {
           genre === "DJ Mixes" ? "hidden" : ""
         }`}
       >
-        <BsFillPlayCircleFill className="text-orange-500" size={35} />
+        <BsFillPlayCircleFill className="text-[#ff6a00]" size={35} />
       </div>
       {/* TITLE & ARTIST */}
       <div className="w-full pl-2 group capitalize cursor-pointer flex flex-col">
@@ -43,7 +41,7 @@ const Song: React.FC<SongProps> = ({title, artist, time, genre}) => {
       {/* SHARE BTN */}
       <a
         href="#"
-        className="hidden small:block hover:bg-white hover:shadow-lg rounded-[3px] transition duration-200 cursor-pointer ease-in-out text-orange-500"
+        className="hidden small:block hover:bg-white hover:shadow-lg rounded-[3px] transition duration-200 cursor-pointer ease-in-out text-[#ff6a00]"
       >
         <HiShare size={25} />
       </a>

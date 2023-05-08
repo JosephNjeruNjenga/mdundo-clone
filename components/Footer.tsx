@@ -3,8 +3,10 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-body">
+      {/* TOP */}
       <div className="py-5">
         <div className="px-[10px] small:px-5 max-w-[1000px] mx-auto flex flex-col">
+          {/* NAV */}
           <div className="text-sm max-w-[135px] text-[#47413c] flex font-body font-semibold flex-col">
             <span className="hover:underline cursor-pointer">Home</span>
             <span className="hover:underline cursor-pointer mt-[3px]">
@@ -20,6 +22,7 @@ const Footer = () => {
               About us
             </span>
           </div>
+          {/* SOCIALS */}
           <div className="mt-8 flex max-w-[135px] justify-between">
             <div className="text-white transition duration-200 ease cursor-pointer hover:opacity-70 rounded-full flex justify-center items-center h-9 w-9 bg-[#5114c9]">
               <FaFacebookF size={20} />
@@ -27,12 +30,13 @@ const Footer = () => {
             <div className="text-white transition duration-200 ease cursor-pointer hover:opacity-70 rounded-full flex justify-center items-center h-9 w-9 bg-blue-400">
               <FaTwitter size={20} />
             </div>
-            <div className="text-white transition duration-200 ease cursor-pointer hover:opacity-70 rounded-full flex justify-center items-center h-9 w-9 bg-[#4e78c8]">
+            <div className="text-white transition duration-200 ease cursor-pointer hover:opacity-70 rounded-full flex justify-center items-center h-9 w-9 bg-gradient-to-r from-[#feda75] via-[#fa7e1e] via-[#d62976] via-[#962fbf] to-[#4f5bd5]">
               <FaInstagram size={20} />
             </div>
           </div>
         </div>
       </div>
+      {/* BOTTOM */}
       <div className="bg-background leading-5 pt-[10px] text-[11px] text-[#9a9999] pb-[13px] mb-[14px]">
         <div className="px-[10px] small:px-5 max-w-[1000px] mx-auto lg:flex justify-between">
           <p>© 2022 Mdundo. All rights reserved.</p>
@@ -57,3 +61,4 @@ const Footer = () => {
 };
 
 export default Footer;
+// [#4e78c8]
