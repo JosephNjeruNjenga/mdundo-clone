@@ -297,3 +297,23 @@ export const news: Array<NewsProps> = [
     image: "https://mdundo.com/media/article-thumbs/t43955.jpg",
   },
 ];
+export const featured: Array<SongProps> = [
+  {
+    title: "IDAN Vibes- Rema, Joeboy",
+    artist: "Afrobeats DJ Mixes ✔️",
+    time: "40:07",
+    genre: "DJ Mixes",
+  },
+  {
+    title: "Have A Good Day DJ Mix - Johnny Drille, Spyro, Tiwa Savage",
+    artist: "Naija Mixes",
+    time: "21:10",
+    genre: "DJ Mixes",
+  },
+  {
+    title: "Trending DJ Mix - Johnny Drille, Magixx, Bayanni",
+    artist: "Mavin Mixes",
+    time: "19:56",
+    genre: "DJ Mixes",
+  },
+];

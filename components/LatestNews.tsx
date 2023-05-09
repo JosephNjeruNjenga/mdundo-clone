@@ -4,7 +4,7 @@ import { news } from './data';
 
 const LatestNews = () => {
   return (
-    <div className="pt-8 pb-10 lg:flex flex-col lg:items-center w-full font-body bg-body">
+    <div className="pt-8 pb-10 lg:flex lg:justify-center font-body bg-body">
         <NewsRow data={news} />
     </div>
   );

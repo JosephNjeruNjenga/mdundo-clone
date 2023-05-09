@@ -1,26 +1,31 @@
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { BsPersonCircle, BsSearch } from "react-icons/bs";
 
-const TOP_OFFSET = 66;
+const TOP_OFFSET = 25;
+interface NavbarProps {
+  display: boolean;
+}
+const Navbar: React.FC<NavbarProps> = ({ display }) => {
+  const [showBackground, setShowBackground] = useState(true);
+  const router = useRouter();
+  if (display) {
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY >= TOP_OFFSET) {
+          setShowBackground(true);
+        } else {
+          setShowBackground(false);
+        }
+      };
 
-const Navbar = () => {
-  const [showBackground, setShowBackground] = useState(false);
+      window.addEventListener("scroll", handleScroll);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= TOP_OFFSET) {
-        setShowBackground(true);
-      } else {
-        setShowBackground(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+  }
   return (
     <div
       className={`w-full z-50 shadow-lg font-body pt-1 transition duration-700 ease-in-out lg:flex lg:justify-center sticky lg:fixed top-0 bg-background ${
@@ -31,7 +36,10 @@ const Navbar = () => {
     >
       <div className="w-full lg:max-w-[1000px] px-0 lg:px-5 grid grid-cols-7 lg:flex items-center">
         {/* LOGO */}
-        <div className="cursor-pointer select-none lg:mr-14 lg:pl-1 self-center col-span-1 place-self-center">
+        <div
+          onClick={() => router.push("/")}
+          className="cursor-pointer select-none lg:mr-14 lg:pl-1 self-center col-span-1 place-self-center"
+        >
           <img
             className={`h-9 small:h-11 ${
               showBackground ? "lg:h-12" : "lg:h-14"

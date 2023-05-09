@@ -2,6 +2,7 @@ import { MdFileDownload } from "react-icons/md";
 import { HiShare } from "react-icons/hi";
 import { BsFillPauseCircleFill, BsFillPlayCircleFill } from "react-icons/bs";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 interface SongProps {
   title: string;
@@ -11,6 +12,7 @@ interface SongProps {
 }
 const Song: React.FC<SongProps> = ({ title, artist, time, genre }) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const router = useRouter();
   return (
     <div className="flex pt-2 text-[#47413c] pb-1 justify-between border-b border-b-gray-400/50 items-center">
       {/* DOWNLOAD BTN */}
@@ -33,7 +35,10 @@ const Song: React.FC<SongProps> = ({ title, artist, time, genre }) => {
       {/* TITLE & ARTIST */}
       <div className="w-full pl-2 group capitalize cursor-pointer flex flex-col">
         {/* TITLE */}
-        <span className="text-sm small:tracking-wide group-hover:underline font-semibold">
+        <span
+          onClick={() => router.push("/song")}
+          className="text-sm small:tracking-wide group-hover:underline font-semibold"
+        >
           {title}
         </span>
         {/* ARTIST */}

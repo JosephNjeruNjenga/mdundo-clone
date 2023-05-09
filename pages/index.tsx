@@ -11,7 +11,7 @@ import TopSongs from "@/components/TopSongs";
 export default function Home() {
   return (
     <div className="relative">
-      <Navbar />
+      <Navbar display />
       <Introduction />
       <hr className="border-gray-300" />
       <TopSongs />

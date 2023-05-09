@@ -3,7 +3,7 @@ import { playlists } from './data'
 
 const PlayLists = () => {
   return (
-    <div className='pt-9 lg:flex flex-col lg:items-center w-full font-body bg-body'>
+    <div className='pt-9 lg:flex lg:justify-center font-body bg-body'>
         <SongRow heading='playlists' display="More Playlists" data={playlists} />
     </div>
   )

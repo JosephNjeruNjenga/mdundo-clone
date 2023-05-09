@@ -4,7 +4,7 @@ import { BsFillPauseCircleFill, BsFillPlayCircleFill } from "react-icons/bs";
 const SongInfo = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   return (
-    <div className="pt-10">
+    <div className="pt-10 lg:pt-28 mb-12">
       <div className="px-[10px] max-w-[1000px] mx-auto small:px-5">
         {/* SONG DETAILS */}
         <div className="pb-[30px]">
