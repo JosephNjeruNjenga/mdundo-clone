@@ -61,4 +61,3 @@ const Footer = () => {
 };
 
 export default Footer;
-// [#4e78c8]

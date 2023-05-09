@@ -1,6 +1,7 @@
 import { MdFileDownload } from "react-icons/md";
 import { HiShare } from "react-icons/hi";
-import { BsFillPlayCircleFill } from "react-icons/bs";
+import { BsFillPauseCircleFill, BsFillPlayCircleFill } from "react-icons/bs";
+import { useState } from "react";
 
 interface SongProps {
   title: string;
@@ -8,7 +9,8 @@ interface SongProps {
   time: string;
   genre: string;
 }
-const Song: React.FC<SongProps> = ({title, artist, time, genre}) => {
+const Song: React.FC<SongProps> = ({ title, artist, time, genre }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
   return (
     <div className="flex pt-2 text-[#47413c] pb-1 justify-between border-b border-b-gray-400/50 items-center">
       {/* DOWNLOAD BTN */}
@@ -17,11 +19,16 @@ const Song: React.FC<SongProps> = ({title, artist, time, genre}) => {
       </div>
       {/* PLAY BTN */}
       <div
-        className={`px-1 cursor-pointer ${
+        onClick={() => setIsPlaying(!isPlaying)}
+        className={`px-1 text-[#ff6a00] transition duration-300 ease hover:text-[#ff5800] cursor-pointer ${
           genre === "DJ Mixes" ? "hidden" : ""
         }`}
       >
-        <BsFillPlayCircleFill className="text-[#ff6a00]" size={35} />
+        {isPlaying ? (
+          <BsFillPauseCircleFill size={35} />
+        ) : (
+          <BsFillPlayCircleFill size={35} />
+        )}
       </div>
       {/* TITLE & ARTIST */}
       <div className="w-full pl-2 group capitalize cursor-pointer flex flex-col">
