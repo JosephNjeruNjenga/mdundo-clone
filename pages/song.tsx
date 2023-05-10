@@ -1,3 +1,4 @@
+import DiscoverArtists from '@/components/DiscoverArtists';
 import Featured from '@/components/Featured';
 import Navbar from '@/components/Navbar'
 import SongInfo from '@/components/SongInfo'
@@ -10,6 +11,7 @@ const song = () => {
       <hr className="border-gray-300" />
       <Featured />
       <hr className="border-gray-300" />
+      <DiscoverArtists />
     </div>
   );
 }
