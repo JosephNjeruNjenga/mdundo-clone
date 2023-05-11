@@ -3,6 +3,7 @@ import ArtistSongs from '@/components/ArtistSongs';
 import DiscoverArtists from '@/components/DiscoverArtists';
 import Featured from '@/components/Featured';
 import Navbar from '@/components/Navbar'
+import Outro from '@/components/Outro';
 import SongInfo from '@/components/SongInfo'
 
 const song = () => {
@@ -18,6 +19,7 @@ const song = () => {
       <ArtistSongs />
       <hr className="border-gray-300" />
       <ArtistNews />
+      <Outro />
     </div>
   );
 }
