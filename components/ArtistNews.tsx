@@ -1,13 +1,13 @@
 import React from 'react'
 import NewsRow from './NewsRow';
-import { news } from './data';
+import { artistNews } from './data';
 
-const LatestNews = () => {
+const ArtistNews = () => {
   return (
     <div className="pt-8 pb-10 lg:flex lg:justify-center font-body bg-body">
-        <NewsRow heading='latest news' data={news} />
+      <NewsRow heading='news' data={artistNews} />
     </div>
   );
 }
 
-export default LatestNews
+export default ArtistNews

@@ -22,7 +22,7 @@ interface NewsProps {
   image: string;
 }
 
-interface ArtistSongs {
+interface ArtistSongsProps {
   title: string;
   time: string;
   genre: string;
@@ -323,7 +323,7 @@ export const featured: Array<SongProps> = [
     genre: "DJ Mixes",
   },
 ];
-export const artistSongs: Array<ArtistSongs> = [
+export const artistSongs: Array<ArtistSongsProps> = [
   {
     title: "How are you (My Friend)",
     time: "3:16",
@@ -418,5 +418,39 @@ export const artistSongs: Array<ArtistSongs> = [
     title: "Finding Efe",
     time: "3:00",
     genre: "Afro Pop",
+  },
+];
+
+export const artistNews: Array<NewsProps> = [
+  {
+    title:
+      "Johnny Drille Releases First Single of 2023 'Believe Me' (Download)",
+    date: "11 April",
+    image: "https://mdundo.com/media/article-thumbs/t43715.jpg",
+  },
+  {
+    title: "Why ‘How Are You’ by Johnny Drille Has Been Successful",
+    date: "28 February",
+    image: "https://mdundo.com/media/article-thumbs/t43153.jpg",
+  },
+  {
+    title: "Johnny Drille Releases Valentine Day Special For Singles - Listen",
+    date: "14 February",
+    image: "https://mdundo.com/media/article-thumbs/t38284.jpg",
+  },
+  {
+    title: "Free Download: Johnny Drille - Before We Fall Asleep Album",
+    date: "08 September",
+    image: "https://mdundo.com/media/article-thumbs/t34786.jpg",
+  },
+  {
+    title: "Johnny Drille Holds Pyjamas Themed Album Listening Party (Photos)",
+    date: "30 August",
+    image: "https://mdundo.com/media/article-thumbs/t34520.jpg",
+  },
+  {
+    title: "New Single Release Nigeria By Johnny Drille 'Something Better'",
+    date: "26 March",
+    image: "https://mdundo.com/media/article-thumbs/t19733.jpg",
   },
 ];
