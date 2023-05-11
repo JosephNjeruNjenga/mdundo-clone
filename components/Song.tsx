@@ -42,7 +42,7 @@ const Song: React.FC<SongProps> = ({ title, artist, time, genre }) => {
           {title}
         </span>
         {/* ARTIST */}
-        <span className="text-xs">{artist}</span>
+        <span className="text-xs">{artist}&nbsp;</span>
       </div>
       {/* GENRE */}
       <span className="hidden w-full cursor-pointer lg:block hover:underline max-w-[90px] text-sm font-semibold">

@@ -17,9 +17,15 @@ interface ArtistsProps {
 }
 
 interface NewsProps {
-  title: string,
-  date: string,
-  image: string,
+  title: string;
+  date: string;
+  image: string;
+}
+
+interface ArtistSongs {
+  title: string;
+  time: string;
+  genre: string;
 }
 
 export const djMixes: Array<SongProps> = [
@@ -315,5 +321,102 @@ export const featured: Array<SongProps> = [
     artist: "Mavin Mixes",
     time: "19:56",
     genre: "DJ Mixes",
+  },
+];
+export const artistSongs: Array<ArtistSongs> = [
+  {
+    title: "How are you (My Friend)",
+    time: "3:16",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Loving is Harder",
+    time: "2:29",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Forever",
+    time: "3:46",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Shine",
+    time: "4:40",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Before I Let Go",
+    time: "2:36",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Mystery Girl",
+    time: "2:33",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Sweet As A Mother's Love",
+    time: "3:16",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Count On You",
+    time: "3:57",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Driving In The Rain feat Ladipoe",
+    time: "2:45",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Journey Of Our Lives  ft Adekunle Gold",
+    time: "3:48",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Only God Knows (Beautiful Mind)",
+    time: "3:10",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Papa",
+    time: "3:42",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Bad Dancer",
+    time: "3:52",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Sell My Soul",
+    time: "3:39",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Come In The Light feat Ayra Starr",
+    time: "3:26",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Ova feat Don Jazzy",
+    time: "3:23",
+    genre: "Afro Pop",
+  },
+  {
+    title: "My Kind Of Brown",
+    time: "3:41",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Ludo",
+    time: "2:42",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Finding Efe",
+    time: "3:00",
+    genre: "Afro Pop",
   },
 ];

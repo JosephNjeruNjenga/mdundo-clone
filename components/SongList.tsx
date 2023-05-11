@@ -3,7 +3,7 @@ import MoreBtn from "./MoreBtn";
 import Song from "./Song";
 
 interface SongListProps {
-  display: string;
+  display?: string;
   heading?: string;
   data: Record<string, any>[];
 }
@@ -16,13 +16,11 @@ const SongList: React.FC<SongListProps> = ({ display, heading, data }) => {
           <Facebook />
         </div>
       )}
-      <h2
-        className={`uppercase text-gray-700 pl-1 text-2xl font-semibold small:text-2xl medium:text-3xl pb-4 lg:pb-8 ${
-          display === "More DJ Mixes" ? "hidden" : ""
-        }`}
-      >
-        {heading}
-      </h2>
+      {heading && (
+        <h2 className="uppercase text-gray-700 pl-1 text-2xl font-semibold small:text-2xl medium:text-3xl pb-4 lg:pb-8">
+          {heading}
+        </h2>
+      )}
       {data.map((song, index: number) => (
         <Song
           key={index}
@@ -32,9 +30,11 @@ const SongList: React.FC<SongListProps> = ({ display, heading, data }) => {
           genre={song.genre}
         />
       ))}
-      <div className="flex justify-end mt-[30px]">
-        <MoreBtn display={display} />
-      </div>
+      {display && (
+        <div className="flex justify-end mt-[30px]">
+          <MoreBtn display={display} />
+        </div>
+      )}
     </div>
   );
 };
