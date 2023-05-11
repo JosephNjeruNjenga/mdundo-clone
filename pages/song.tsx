@@ -2,6 +2,7 @@ import ArtistNews from '@/components/ArtistNews';
 import ArtistSongs from '@/components/ArtistSongs';
 import DiscoverArtists from '@/components/DiscoverArtists';
 import Featured from '@/components/Featured';
+import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar'
 import Outro from '@/components/Outro';
 import SongInfo from '@/components/SongInfo'
@@ -20,6 +21,8 @@ const song = () => {
       <hr className="border-gray-300" />
       <ArtistNews />
       <Outro />
+      <hr className="border-gray-300" />
+      <Footer />
     </div>
   );
 }
