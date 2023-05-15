@@ -22,7 +22,7 @@ const song = () => {
       <ArtistNews />
       <Outro />
       <hr className="border-gray-300" />
-      <Footer />
+      <Footer display={false} />
     </div>
   );
 }

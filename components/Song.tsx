@@ -14,7 +14,13 @@ const Song: React.FC<SongProps> = ({ title, artist, time, genre }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const router = useRouter();
   return (
-    <div className="flex pt-2 text-[#47413c] pb-1 justify-between border-b border-b-gray-400/50 items-center">
+    <div
+      className={`flex pt-2 text-[#47413c] pb-1 justify-between items-center ${
+        isPlaying
+          ? "border-b-2 border-b-gray-400"
+          : " border-b  border-b-gray-400/50"
+      }`}
+    >
       {/* DOWNLOAD BTN */}
       <div className="text-blue-500 hover:bg-white hover:shadow-lg rounded-[3px] cursor-pointer">
         <MdFileDownload size={40} />

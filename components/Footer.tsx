@@ -1,13 +1,16 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
-const Footer = () => {
+interface FooterProps {
+  display: boolean;
+}
+const Footer: React.FC<FooterProps> = ({ display }) => {
   return (
     <div className="bg-body">
       {/* TOP */}
       <div className="py-5">
         <div className="px-[10px] small:px-5 max-w-[1000px] mx-auto flex flex-col">
           {/* NAV */}
-          <div className="text-sm max-w-[135px] text-[#47413c] flex font-body font-semibold flex-col">
+          <div className="text-[13px] max-w-[135px] text-[#47413c] flex font-body font-semibold flex-col">
             <span className="hover:underline cursor-pointer">Home</span>
             <span className="hover:underline cursor-pointer mt-[3px]">
               News
@@ -49,12 +52,15 @@ const Footer = () => {
             </span>
           </p>
         </div>
-        <div className="px-[10px] small:px-5 max-w-[1000px] mx-auto">
-          <p>
-            This product includes GeoLite2 data created by MaxMind, available
-            from <span className="cursor-pointer">https://www.maxmind.com</span>
-          </p>
-        </div>
+        {display && (
+          <div className="px-[10px] small:px-5 max-w-[1000px] mx-auto">
+            <p>
+              This product includes GeoLite2 data created by MaxMind, available
+              from{" "}
+              <span className="cursor-pointer">https://www.maxmind.com</span>
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

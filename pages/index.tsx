@@ -23,7 +23,7 @@ export default function Home() {
       <hr className="border-gray-300" />
       <Outro />
       <hr className="border-gray-300" />
-      <Footer />
+      <Footer display />
     </div>
   );
 }

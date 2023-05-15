@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { HiShare } from "react-icons/hi";
 
 interface CardProps {
@@ -7,7 +8,14 @@ interface CardProps {
   name?: string;
   image: string;
 }
-const Card: React.FC<CardProps> = ({display, title, subtitle, image, name}) => {
+const Card: React.FC<CardProps> = ({
+  display,
+  title,
+  subtitle,
+  image,
+  name,
+}) => {
+  const router = useRouter();
   return (
     <div
       className={`flex flex-col px-5 mb-9 ${
@@ -16,9 +24,10 @@ const Card: React.FC<CardProps> = ({display, title, subtitle, image, name}) => {
     >
       <div className="relative cursor-pointer rounded-t-[3px] overflow-hidden group w-[160px] h-[160px]">
         <img
+          onClick={() => router.push("/playlist")}
           className="group-hover:brightness-[.6] w-full h-full object-cover transition duration-200  ease-in-out"
           src={image}
-          alt={`${display === "playlists" ? title : name }`}
+          alt={`${display === "playlists" ? title : name}`}
         />
         <a
           href="#"
@@ -31,7 +40,10 @@ const Card: React.FC<CardProps> = ({display, title, subtitle, image, name}) => {
       </div>
       {display === "playlists" && (
         <div className="flex flex-col">
-          <span className="hover:underline cursor-pointer text-sm mt-1 text-[#47413c]">
+          <span
+            onClick={() => router.push("/playlist")}
+            className="hover:underline cursor-pointer text-sm mt-1 text-[#47413c]"
+          >
             {title}
           </span>
           <span className="text-xs text-[#9a9999]">{subtitle} songs</span>
@@ -44,6 +56,6 @@ const Card: React.FC<CardProps> = ({display, title, subtitle, image, name}) => {
       )}
     </div>
   );
-}
+};
 
-export default Card
+export default Card;
