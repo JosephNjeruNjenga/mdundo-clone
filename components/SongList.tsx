@@ -13,7 +13,7 @@ const SongList: React.FC<SongListProps> = ({ display, heading, data }) => {
     <div className="lg:w-full lg:max-w-[960px]">
       {display === "More DJ Mixes" && (
         <div className="flex justify-end">
-          <Facebook />
+          <Facebook icon text="Like" count="241K" />
         </div>
       )}
       {heading && (

@@ -8,7 +8,13 @@ const SongInfo = () => {
       <div className="px-[10px] max-w-[1000px] mx-auto small:px-5">
         {/* SONG DETAILS */}
         <div className="pb-[30px]">
-          <div className="flex border-b items-center">
+          <div
+            className={`flex items-center ${
+              isPlaying
+                ? "border-b-2 border-gray-400"
+                : "border-gray-400/50 border-b"
+            }`}
+          >
             {/* PLAY BTN */}
             <div
               onClick={() => setIsPlaying(!isPlaying)}
