@@ -7,7 +7,7 @@ const PlaylistInfo = () => {
     <div className="pt-10 lg:pt-[115px]">
       <div className="px-[10px] max-w-[1000px] mx-auto small:px-5">
         <div className="border-b lg:relative border-[#828282] pb-[25px] mb-[5px]">
-          <div className="flex h-[100px] lg:h-[160px]">
+          <div className="flex lg:h-[160px]">
             <div className="w-[90px] min-w-[90px] lg:w-[142px] lg:min-w-[142px] my-auto rounded-[3px] overflow-hidden">
               <img
                 src="https://mdundo.com/media/playlist/39446_LzbTNJMX_t.jpg"
@@ -22,7 +22,7 @@ const PlaylistInfo = () => {
                 <div className="mt-[3px] text-[#47413c] text-[13px] font-semibold">
                   118 songs featuring Mavin All Stars, Rema, Chiké
                 </div>
-                <div className="flex pl-[5px] gap-3 pt-[3px] pb-[2px]">
+                <div className="flex pl-[5px] gap-3 pt-[3px] lg:pt-[5px] pb-[2px]">
                   <Facebook icon text="Like" count="55" />
                   <Facebook text="Share" />
                 </div>
