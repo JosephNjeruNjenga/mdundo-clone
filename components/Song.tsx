@@ -55,7 +55,7 @@ const Song: React.FC<SongProps> = ({ title, artist, time, genre }) => {
         #{genre}
       </span>
       {/* TIME */}
-      <span className="pl-3 small:px-3 small:text-base text-base">{time}</span>
+      <span className="pl-3 small:px-3 small:text-base text-[13px]">{time}</span>
       {/* SHARE BTN */}
       <a
         href="#"

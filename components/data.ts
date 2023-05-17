@@ -454,3 +454,90 @@ export const artistNews: Array<NewsProps> = [
     image: "https://mdundo.com/media/article-thumbs/t19733.jpg",
   },
 ];
+
+export const playlistSongs: Array<SongProps> = [
+  {
+    title: "Trending Mix 2022",
+    artist: "Afrobeats DJ Mixes ✔️",
+    time: "14:57",
+    genre: "DJ Mixes",
+  },
+  {
+    title: "My Friend",
+    artist: "Bella Shmurda",
+    time: "3:03",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Latest Afropop Mix",
+    artist: "Afrobeats DJ Mixes ✔️",
+    time: "15:04",
+    genre: "DJ Mixes",
+  },
+  {
+    title: "Baby Riddim",
+    artist: "FAVE",
+    time: "3:14",
+    genre: "R&B",
+  },
+  {
+    title: "Hot Mix Naija",
+    artist: "Afrobeats DJ Mixes ✔️",
+    time: "15:33",
+    genre: "DJ Mixes",
+  },
+  {
+    title: "New Hot Mix",
+    artist: "Afrobeats DJ Mixes ✔️",
+    time: "13:01",
+    genre: "DJ Mixes",
+  },
+  {
+    title: "Ozumba Mbadiwe",
+    artist: "Ozumba Mbadiwe",
+    time: "3:32",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Fresh DJ Mix",
+    artist: "Afrobeats DJ Mixes ✔️",
+    time: "13:01",
+    genre: "DJ Mixes",
+  },
+  {
+    title: "Latest Afropop Mix 2022",
+    artist: "Afrobeats DJ Mixes ✔️",
+    time: "15:11",
+    genre: "DJ Mixes",
+  },
+  {
+    title: "Mercy Chinwoo, Pv Idemudia, Janet Otieno Gospel DJ Mix #DJMixes",
+    artist: "Nigerian Gospel DJ Mixes ✔️",
+    time: "14:49",
+    genre: "DJ Mixes",
+  },
+  {
+    title: "Bad Gurl",
+    artist: "Nellamich",
+    time: "2:51",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Soundgasm",
+    artist: "Rema",
+    time: "3:24",
+    genre: "Afro Pop",
+  },
+  {
+    title: "Running To You ft. Simi",
+    artist: "Chiké",
+    time: "3:11",
+    genre: "Pop",
+  },
+  {
+    title: "2022 DJ Mixtape",
+    artist: "Afrobeats DJ Mixes ✔️",
+    time: "15:07",
+    genre: "DJ Mixes",
+  },
+];
