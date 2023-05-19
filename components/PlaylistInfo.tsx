@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Facebook from "./Facebook";
+import Image from "next/image";
 
 const PlaylistInfo = () => {
   const [showArtists, setShowArtists] = useState(false);
@@ -34,7 +35,7 @@ const PlaylistInfo = () => {
               Rema, Joeboy, Davido, Reekado Banks, sKIIBIINew mixes,{" "}
               <span className={`${showArtists ? "" : "hidden"}`}>
                 latest mixes, dj mixes, naija dj mixes, latest dj mixes, top
-                naija mixes, 2022 dj's 2022 dj mixes,Bella Shmurda, rema, chike,
+                naija mixes, 2022 dj&apos;s 2022 dj mixes,Bella Shmurda, rema, chike,
                 Reekado Banks, Fave, Zoro, Phyno,{" "}
               </span>
               <span

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { BsPersonCircle, BsSearch } from "react-icons/bs";
@@ -7,25 +8,27 @@ interface NavbarProps {
   display: boolean;
 }
 const Navbar: React.FC<NavbarProps> = ({ display }) => {
-  const [showBackground, setShowBackground] = useState(true);
+  const [showBackground, setShowBackground] = useState(false);
   const router = useRouter();
-  if (display) {
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY >= TOP_OFFSET) {
-          setShowBackground(true);
-        } else {
-          setShowBackground(false);
-        }
-      };
 
-      window.addEventListener("scroll", handleScroll);
+  useEffect(() => {
+    if (!display) return setShowBackground(true);
 
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
-  }
+    const handleScroll = () => {
+      if (window.scrollY >= TOP_OFFSET) {
+        setShowBackground(true);
+      } else {
+        setShowBackground(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [display]);
+
   return (
     <div
       className={`w-full z-50 shadow-lg font-body pt-1 transition duration-700 ease-in-out lg:flex lg:justify-center sticky lg:fixed top-0 bg-background ${

@@ -3,6 +3,7 @@ import { HiShare } from "react-icons/hi";
 import { BsFillPauseCircleFill, BsFillPlayCircleFill } from "react-icons/bs";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 interface SongProps {
   title: string;
@@ -57,12 +58,12 @@ const Song: React.FC<SongProps> = ({ title, artist, time, genre }) => {
       {/* TIME */}
       <span className="pl-3 small:px-3 small:text-base text-[13px]">{time}</span>
       {/* SHARE BTN */}
-      <a
+      <Link
         href="#"
         className="hidden small:block hover:bg-white hover:shadow-lg rounded-[3px] transition duration-200 cursor-pointer ease-in-out text-[#ff6a00]"
       >
         <HiShare size={25} />
-      </a>
+      </Link>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Outro = () => {
           <p className="mb-8">
             Download music from your favorite artists{" "}
             <span className="font-bold">for free</span> with Mdundo. Mdundo
-            started in collaboration with some of Africa's{" "}
+            started in collaboration with some of Africa&apos;s{" "}
             <span className="font-bold">best artists</span>. By downloading
             music from Mdundo YOU become a part of supporting African artists!!!
             Mdundo is financially backed by 88mph - in partnership with Google

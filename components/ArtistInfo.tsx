@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Facebook from "./Facebook";
+import Image from "next/image";
 
 const ArtistInfo = () => {
   const [showArtists, setShowArtists] = useState(false);
@@ -34,7 +35,7 @@ const ArtistInfo = () => {
               Lucky Philip Dube was a South African reggae musician and
               Rastafarian. He recorded 22 albums in Zulu, English and{" "}
               <span className={`${showArtists ? "" : "hidden"}`}>
-                Afrikaans in a 25-year period and was South Africa's
+                Afrikaans in a 25-year period and was South Africa&apos;s
                 biggest-selling reggae artist.{" "}
               </span>
               <span

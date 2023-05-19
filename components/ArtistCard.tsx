@@ -1,8 +1,9 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 interface ArtistCardProps {
   display: string;
-  name?: string;
+  name: string;
   image: string;
 }
 const ArtistCard: React.FC<ArtistCardProps> = ({ display, image, name }) => {

@@ -1,6 +1,7 @@
 import PlaylistCard from "./PlaylistCard";
 import MoreBtn from "./MoreBtn";
 import ArtistCard from "./ArtistCard";
+import Image from "next/image";
 
 interface SongRowProps {
   display: string;
@@ -36,7 +37,7 @@ const SongRow: React.FC<SongRowProps> = ({ display, data, heading }) => {
             ))}
           {heading === "playlists" && (
             <div className="absolute hidden lg:block w-[140px] h-[130px] -z-10 -top-[85px] -right-[40px]">
-              <img src="https://mdundo.com/media/img/playlist_ico.png" alt="" />
+              <img src="https://mdundo.com/media/img/playlist_ico.png" alt="playlist" />
             </div>
           )}
         </div>

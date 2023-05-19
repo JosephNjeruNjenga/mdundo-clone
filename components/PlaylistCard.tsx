@@ -1,10 +1,11 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { HiShare } from "react-icons/hi";
 
 interface PlaylistCardProps {
   display: string;
-  title?: string;
-  subtitle?: string;
+  title: string;
+  subtitle: string;
   image: string;
 }
 const PlaylistCard: React.FC<PlaylistCardProps> = ({
