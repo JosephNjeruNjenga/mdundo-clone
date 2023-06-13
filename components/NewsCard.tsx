@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface NewsCardProps {
   title: string;
   date: string;

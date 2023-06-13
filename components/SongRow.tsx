@@ -1,7 +1,6 @@
 import PlaylistCard from "./PlaylistCard";
 import MoreBtn from "./MoreBtn";
 import ArtistCard from "./ArtistCard";
-import Image from "next/image";
 
 interface SongRowProps {
   display: string;

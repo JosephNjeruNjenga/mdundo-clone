@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Facebook from "./Facebook";
-import Image from "next/image";
 
 const PlaylistInfo = () => {
   const [showArtists, setShowArtists] = useState(false);

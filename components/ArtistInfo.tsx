@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Facebook from "./Facebook";
-import Image from "next/image";
 
 const ArtistInfo = () => {
   const [showArtists, setShowArtists] = useState(false);
@@ -15,15 +14,15 @@ const ArtistInfo = () => {
                 alt="Hot Party Mixes"
               />
             </div>
-            <div className="flex flex-col w-full px-[10px] lg:px-5">
+            <div className="flex flex-col w-full px-[10px] lg:pl-5 lg:pr-0">
               <h2 className="text-[22px] lg:text-2xl pb-[3px] lg:pb-[5px] text-[#47413c] font-semibold">
                 Lucky Dube
               </h2>
-              <div className="flex flex-col lg:flex-row lg:justify-between border-t">
+              <div className="flex flex-col lg:flex-row lg:justify-between lg:pt-[1px] border-t">
                 <div className="mt-[3px] text-[#47413c] text-[13px] font-semibold">
                   414 820 monthly listeners. Rank: 1
                 </div>
-                <div className="flex pl-[5px] gap-3 pt-[3px] lg:pt-[5px] pb-[2px]">
+                <div className="flex pl-[5px] gap-3 pt-[3px] lg:mr-2 lg:pt-[5px] pb-[2px]">
                   <Facebook icon text="Like" count="10K" />
                   <Facebook text="Share" />
                 </div>
